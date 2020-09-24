@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{box-sizing: border-box;}
+
+        body {
+            display: flex;
+            height: 100vh;
+        }
+
+
+        section {
+            margin: auto;
+            display: flex;
+            height: 50vh;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+        }
+section .tulip {
+
+    min-height: 20vh;
+    width: 16vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: scale(.1);
+
+}
+
+        section .tulip1 {
+            background-image: url("./images/tulip_purple1.jpg");
+        }
+
+        section .tulip2 {
+            background-image: url("./images/tulip_yellow1.jpg");
+        }
+
+        section .tulip3 {
+            background-image: url("./images/tulip_pink4.jpeg");
+        }
+
+        section .tulip4 {
+            background-image: url("./images/tulip_orange1.jpg");
+        }
+
+        section .tulip5 {
+            background-image: url("./images/tulip_white1.jpg");
+        }
+
+        section .tulip6 {
+            background-image: url("./images/tulip_bunt.png");
+        }
+
+@keyframes growth {
+
+    0% {transform: scale(.1);}
+      100% {transform: scale(1.6);}
+
+}
+       .tulip {
+           animation: growth 7s 1 ease-in-out 1s;
+           animation-fill-mode: forwards;
+       }
+
+     /* .tulip1 {
+            animation: growth 7s 1 ease-in-out 2s;
+            animation-fill-mode: forwards;
+        }
+        .tulip2 {
+            animation: growth 7s 1 ease-in-out 4s;
+            animation-fill-mode: forwards;
+        }
+        .tulip3 {
+            animation: growth 7s 1 ease-in-out 6s;
+            animation-fill-mode: forwards;
+        }
+        .tulip4 {
+            animation: growth 7s 1 ease-in-out 8s;
+            animation-fill-mode: forwards;
+        }
+        .tulip5 {
+            animation: growth 7s 1 ease-in-out 10s;
+            animation-fill-mode: forwards;
+        }
+        .tulip6 {
+            animation: growth 7s 1 ease-in-out 12s;
+            animation-fill-mode: forwards;
+        }*/
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="tulip tulip1"></div>
+    <div class="tulip tulip2"></div>
+    <div class="tulip tulip3"></div>
+    <div class="tulip tulip4"></div>
+    <div class="tulip tulip5"></div>
+    <div class="tulip tulip6"></div>
+
+</section>
+
+</body>
+</html>

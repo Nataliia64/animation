@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body {
+            display: flex;
+            height: 100vh;
+        }
+
+        .block {
+            margin: auto;
+            font-size: 0;
+
+
+        }
+
+
+        section {
+
+            display: inline-block;
+            float: left;
+            width: 5vw;
+            height: 5vw;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, blue, red);
+
+        }
+
+
+
+        @keyframes section_1a {
+            0%, 50%, 100% {
+                transform: translate(0);
+            }
+
+            25% {
+                transform: translate(-20vw, -20vw);
+            }
+
+        }
+
+        @keyframes quick {
+            0%, 50%, 100% {
+                transform: translate(0);
+            }
+
+            25%, 75% {
+                transform: translate(-20vw, -20vw);
+            }
+
+
+        }
+
+        @keyframes section_1 {
+            0%, 50%, 100% {
+                transform: translate(0);
+            }
+
+            25% {
+                transform: translate(-20vw, -20vw);
+            }
+        }
+
+
+
+        .block section:nth-of-type(1){
+            animation-name: section_1a, quick, section_1;
+            animation-duration: 2s;
+            animation-iteration-count: 1, 1, infinite;
+            animation-delay: 0s, 4s, 7s;
+        }
+
+
+
+        @keyframes section_7a {
+            0%, 50%, 100% {
+                transform: translate(0);
+            }
+
+            25% {
+                transform: translate(20vw, -20vw);
+            }
+
+        }
+
+        @keyframes stand {
+            0%, 100% {
+                transform: translate(0);
+            }
+
+        }
+
+        @keyframes section_7 {
+            0%, 50%, 100% {
+                transform: translate(0);
+            }
+
+            25% {
+                transform: translate(20vw, -20vw);
+            }
+
+        }
+
+        .block section:nth-of-type(7){
+            animation-name: section_7a, stand, section_7;
+            animation-duration: 2s;
+            animation-iteration-count: 1, 1, infinite;
+            animation-delay: 2s, 4s, 6s;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<article class="block">
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+</article>
+</body>
+</html>
